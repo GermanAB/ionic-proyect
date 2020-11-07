@@ -1,0 +1,55 @@
+<!-- <app-header titulo="Avatar"></app-header>
+
+<ion-content>
+  <ion-avatar>
+    <img src="/assets/images/descarga.jpg">
+  </ion-avatar>
+  
+  <ion-chip>
+    <ion-avatar>
+      <img src="/assets/images/descarga.jpg">
+    </ion-avatar>
+    <ion-label>Chip Avatar</ion-label>
+  </ion-chip>
+  
+  <ion-item>
+    <ion-avatar slot="start">
+      <img src="/assets/images/descarga.jpg">
+    </ion-avatar>
+    <ion-label>Item Avatar</ion-label>
+  </ion-item>
+
+</ion-content> -->
+
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start"  mode="ios" color="primary">
+    <ion-back-button defaultHref="/" text="Regresar"></ion-back-button>
+  </ion-buttons>
+
+  <ion-title>Avatar</ion-title>
+  <ion-buttons slot="end">
+    <ion-avatar> 
+      <!-- <img src="/assets/images/descarga.jpg"/> -->
+      <ion-img src="/assets/images/descarga.jpg"></ion-img>
+    </ion-avatar>
+  </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-chip color="primary" outline="true" *ngFor="let item of [1,1,1,1,1,1]">
+    <ion-avatar>
+      <ion-img  src="/assets/images/descarga.jpg"></ion-img>
+    </ion-avatar> 
+    <ion-label>Default</ion-label>
+  </ion-chip>
+  <ion-list>
+    <ion-item *ngFor="let item of [1,2,3,4,5,6]">
+      <ion-avatar side="end">
+        <ion-img src="/assets/images/descarga.jpg"></ion-img>
+      </ion-avatar>
+      <ion-label side="start">Perfil</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

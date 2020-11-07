@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>inicio ves que si es!</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let e of elementos" routerLink="{{e.redirectTO}}">
+      <ion-icon color="primary" slot="start" [name]="e.icon"></ion-icon>
+      <!-- name="{{e.icon}}"  esta es otra forma de llamar el icon-->
+      {{e.name}}
+    </ion-item>
+  </ion-list>
+  <!--   <h1>Botones para dirección</h1>
+  <ion-button routerLink="/alert">Ir al Alert</ion-button>
+  <ion-button routerLink="/action-sheet">Ir al Action-sheet</ion-button> -->
+</ion-content>
